@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <img src="photo_2024-11-17_14-02-02.jpg" alt="Egorik" width="200px" height="200px">
+        <div>
+            <h1>Миркин Егор Ярославович</h1>
+            <p><b>Адрес:</b> ул. Звенигородская 46</p>
+            <p><b>Опыт работы:</b> нет</p>
+            <p><b>Телефон:</b> +79048050339</p>
+        </div>
+    </div>
+
+    <h2>Знание языков:</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>Java</th>
+            <th>JavaScript</th>
+            <th>C++</th>
+            <th>C#</th>
+            <th>Swift</th>
+        </tr>
+        <tr>
+            <td>Отличное владение</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Нет</td>
+            <td>нет</td>
+        </tr>
+        <tr>
+            <td>Хорошее владение</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>нет</td>
+            <td>Да</td>
+        </tr>
+        <tr>
+            <td>Среднее владение</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>нет</td>
+            <td>Да</td>
+            <td>Да</td>
+        </tr>
+        <tr>
+            <td>Плохое владение</td>
+            <td>Да</td>
+            <td>нет</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+        </tr>
+    </table>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" placeholder="Введите ваш телефон">
+        </div>
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+        </div>
+    </div>
+
+    <button onclick="toggleVisibility()">Кликните сюда, чтобы узнать меня подробнее</button>
+    <div id="hiddenDiv" class="option">
+        <p>Привет! Я Миркин Егор Ярославович, начинающий программист с огромным интересом к технологиям и разработке. Несмотря на отсутствие опыта работы, я активно изучаю современные языки программирования, такие как Java, JavaScript и C++. Постоянно развиваю свои навыки и стремлюсь к созданию качественного программного обеспечения.</p>
+        <p>Мои сильные стороны: аналитическое мышление, быстрая обучаемость и умение решать сложные задачи. Кроме программирования, увлекаюсь созданием игровых проектов и изучением архитектуры приложений. В свободное время люблю читать книги по разработке ПО и участвовать в хакатонах.</p>
+        <p>Моя цель — стать профессионалом в области разработки и внести вклад в создание инновационных технологий. Я открыт для новых возможностей и готов к любым вызовам!</p>
+    </div>
+    
+
+    <script>
+        function toggleVisibility() {
+            let element = document.getElementById('hiddenDiv');
+            element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
